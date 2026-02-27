@@ -1,2 +1,12 @@
-# shrink_wsl_disk_usage
-Procedure to shrink the disk usage of WSL2 in Windows 11
+### Pre-Requisite
+1. Find your .vhdx file location in C drive.
+2. Copy the file location
+
+### Open CMD as Admin
+Enter the following commands in order :
+- `diskpart` 
+- `select vdisk file="C:\Users\YOUR_USERNAME\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_...\LocalState\ext4.vhdx"`
+- `attach vdisk readonly`
+- `compact vdisk`
+- `detach vdisk`
+- `exit`
