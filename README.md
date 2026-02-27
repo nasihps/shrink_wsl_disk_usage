@@ -5,7 +5,7 @@
 
 ## Shutdown WSL
 Use the term 'wsl' if powershell else use 'wsl.exe' if cmd
-- `wsl --shutdown` to shutdown WSL
+- `wsl --shutdown` : to shutdown WSL
 
 ## Open CMD as Admin
 Enter the following commands in order :
